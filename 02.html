@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>預約畫面2</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/calendar.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon" xmlns="">
+    <link rel="apple-touch-icon" href="/favicon.png">
+</head>
+
+<body>
+    <div id="app">
+        <div class="Subject">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="subject-icon">
+                    <img src="./img/icon-h-01.png" alt="">
+                </div>
+                <h2>
+                    溫泉湯屋
+                </h2>
+            </div>
+        </div>
+        <div class="calendar"></div>
+        <div class="booking-form">
+            <div class="count">
+                <h2>人數</h2>
+                <div class="setCount plus" data-count="plus">
+                    <img src="./img/count-plus.png" alt="">
+                </div>
+                <input type="text" disabled class="form-control" id="d-count" max="10" value="12">
+                <div class="setCount dash" data-count="minus">
+                    <img src="./img/count-dash.png" alt="">
+                </div>
+            </div>
+            <div class="booking-time  owl-carousel">
+                <div class="item">
+                    10:00
+                </div>
+                <div class="item">
+                    11:00
+                </div>
+                <div class="item">
+                    12:00
+                </div>
+                <div class="item">
+                    13:00
+                </div>
+                <div class="item">
+                    14:00
+                </div>
+            </div>
+            <div class="btns">
+                <button class="btn btn-primary btn-ctm me-2">確定</button>
+                <button class="btn btn-primary btn-ctm" style="--btn-ctm-bg-color:#df0a36">取消</button>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-func">
+                <a href="" class="ecchfunc">
+                    <div class="icon-f">
+                        <img src="./img/icon-footer-home.png" alt="首頁">
+                    </div>
+                    首頁
+                </a>
+                <a href="" class="ecchfunc">
+                    <div class="icon-f">
+                        <img src="./img/icon-footer-rec.png" alt="紀錄">
+                    </div>
+                    紀錄
+                </a>
+                <a href="" class="ecchfunc">
+                    <div class="icon-f">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
+                            3
+                        </span>
+                        <img src="./img/icon-footer-mess.png" alt="訊息">
+                    </div>
+                    訊息
+
+                </a>
+                <a href="" class="ecchfunc">
+                    <div class="icon-f">
+                        <img src="./img/icon-footer-acc.png" alt="我的">
+                    </div>
+                    我的
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/calendar.js"></script>
+    <script src="./js/owl.carousel.js"></script>
+    <script>
+        $(function () {
+            let _count;
+            $('.booking-time .item').on('click', function () {
+                $(this).parents().find('.item').removeClass('active')
+                $(this).toggleClass('active')
+
+            })
+            $('.setCount').on('click', function () {
+                _count = $("#d-count").val()
+
+                if ($(this).data('count') == 'plus'&& _count>0) {
+                    _count++
+                } else if ($(this).data('count') == 'minus' && _count>0) {
+                    _count--
+                }
+                $("#d-count").val(_count)
+            })
+            var bookingTime = $('.booking-time');
+            bookingTime.owlCarousel({
+                items: 3,
+                loop: false,
+                nav: true,
+                margin: 10,
+                navText: ["<img src='img/prev-t.png'>", "<img src='img/next-t.png'>"],
+                dots: false,
+                autoplay: false,
+            });
+        });
+
+    </script>
+</body>
+
+</html>

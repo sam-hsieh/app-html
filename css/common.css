@@ -1,0 +1,47 @@
+:root{
+    --btn-ctm-bg-color:#306c18
+}
+.btn-ctm {
+    border-radius: 3rem;
+    display: inline-block;
+    color: #fff;
+    background-color: var(--btn-ctm-bg-color);
+    text-align: center;
+    font-weight: 500;
+    font-family: "Noto Sans TC";
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+    border: none;
+    box-shadow: none;
+  }
+  .btn-ctm:hover, .btn-ctm:active, .btn-ctm:focus{
+    color: #fff;
+    background-color: #000;
+    box-shadow: none;
+  }
+  .fw-900{
+    font-weight: 900;
+  }
+  /* scroll */
+.content-scroll {
+    overflow: auto;
+  }
+  .content-scroll::-webkit-scrollbar {
+    width: 5px;
+  }
+  .content-scroll::-webkit-scrollbar-button {
+    background: #92a865;
+    border-radius: 4px;
+  }
+  .content-scroll::-webkit-scrollbar-track-piece {
+    background: #92a865;
+  }
+  .content-scroll::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+  
+    background-color: #306c18;
+  }
+  .content-scroll::-webkit-scrollbar-track {
+    box-shadow: #92a865;
+  }
+  /* scroll end */

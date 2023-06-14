@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../font/NotoSansTC-Thin.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../font/NotoSansTC-Regular.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../font/NotoSansTC-Medium.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../font/NotoSansTC-Bold.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 900;
+  src: local(""), url("../font/NotoSansTC-Black.otf") format("opentype");
+  font-display: swap;
+}
