@@ -1,3 +1,4 @@
+let $getD,$getM,$getY;
 function CalendarControl() {
     const calendar = new Date();
     const calendarControl = {
@@ -67,11 +68,10 @@ function CalendarControl() {
         monthLabel.innerHTML = calendarControl.calMonthName[calendar.getMonth()];
       },
       selectDate: function (e) {
-        console.log(
-          `${e.target.textContent} ${
-            calendarControl.calMonthName[calendar.getMonth()]
-          } ${calendar.getFullYear()}`
-        );
+        $getD=e.target.textContent;
+        $getM=calendar.getMonth()+1;
+        $getY=calendar.getFullYear();
+        document.getElementById("hd_isNArmy").value= $getY+'/'+$getM+'/'+ $getD
       },
       plotSelectors: function () {
         document.querySelector(
