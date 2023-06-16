@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歷史／預約及消費紀錄</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/solid.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon" xmlns="">
+    <link rel="apple-touch-icon" href="/favicon.png">
+</head>
+<body>
+    <div id="app" class="hasListScroll">
+        <div class="Subject">
+            <a href="javascript:;" class="goback">
+                <i class="fa-solid fa-angle-left"></i>
+            </a>
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="subject-icon">
+                    <img src="./img/icon-h-02.png" alt="">
+                </div>
+                <h2>
+                    預約及消費紀錄
+                </h2>
+            </div>
+        </div>
+        <div class="nav-tab">
+            <ul>
+                <li>
+                    <a href="./03.html">預約</a>
+                </li>
+                <li>
+                    <a class="active">歷史</a>
+                </li>
+                <li>
+                    <a href="./05.html">消費</a>
+                </li>
+            </ul>
+        </div>
+        <div class="set-filter">
+            <div class="each-filter">
+                <input type="checkbox" id="filter-1" checked>
+                <label for="filter-1">公設設施</label>
+            </div>
+            <div class="each-filter">
+                <input type="checkbox" id="filter-2" checked>
+                <label for="filter-2">課程活動</label>
+            </div>
+            <div class="each-filter">
+                <input type="checkbox" id="filter-3">
+                <label for="filter-3">生活服務</label>
+            </div>
+        </div>
+        <div class="dis-pickup-data">
+            <div class="date">
+                <div class="d-flex align-items-center">
+                    <span>起始日 </span>
+                    <input type="date" class="datepicker fw-700" id="date-start" value="2023-07-19">
+                </div>
+                <div class="d-flex align-items-center">
+                    <span>結束日 </span>
+                    <input type="date" class="datepicker fw-700" id="date-end" value="2023-07-23">
+                </div>
+            </div>
+            <div class="go-submit">
+                <button>查詢 <i class="fa-solid fa-magnifying-glass ms-2"></i></button>
+            </div>
+        </div>
+        <div id="list-booking" class="dislist">
+            <div class="list-info content-scroll">
+                <div class="each-info">
+                    <div class="row px-0 mx-0 justify-content-between gx-0">
+                        <div class="col-10">
+                            <div>
+                                <span class="badge bg-date me-1">日期</span>
+                                <small class="color-777">2023/03/25 10:10-11:00</small>
+                            </div>
+                            <div>
+                                <span class="badge bg-tag me-1">公設</span>溫泉湯屋 <span class="color-b7c992">/</span>
+                                <span class="fs-3">2 </span>人
+                            </div>
+                        </div>
+                        <div class="col-2 leftBD px-0 d-flex justify-content-center">
+                            <div class="rec_status">
+                                <i class="fa-solid fa-check fa-2x color-c5d4a7"></i>
+                                <small class="color-c5d4a7">已使用</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="each-info">
+                    <div class="row px-0 mx-0 justify-content-between gx-0">
+                        <div class="col-10">
+                            <div>
+                                <span class="badge bg-date me-1">日期</span>
+                                <small class="color-777">2023/03/25 10:10-11:00</small>
+                            </div>
+                            <div>
+                                <span class="badge bg-tag me-1">生活</span>鐘點服務(衣物清潔) <span class="color-b7c992">/</span>
+                                <span class="fs-3">43 </span>件
+                            </div>
+                        </div>
+                        <div class="col-2 leftBD px-0 d-flex justify-content-center">
+                            <div class="rec_status">
+                                <i class="fa-solid fa-check fa-2x notyet color-306c18"></i>
+                                <small class="color-306c18">未使用</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="each-info">
+                    <div class="row px-0 mx-0 justify-content-between gx-0">
+                        <div class="col-10">
+                            <div>
+                                <span class="badge bg-date me-1">日期</span>
+                                <small class="color-777">2023/03/25 10:10-11:00</small>
+                            </div>
+                            <div>
+                                <span class="badge bg-tag me-1">課程活動</span> 課程預約(繪畫) <span class="color-b7c992">/</span>
+                                <span class="fs-3">1 </span>人
+                            </div>
+                        </div>
+                        <div class="col-2 leftBD px-0 d-flex justify-content-center">
+                            <div class="rec_status">
+                                <i class="fa-solid fa-xmark fa-2x color-306c18"></i>
+                                <small class="color-306c18">已取消</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="each-info">
+                    <div class="row px-0 mx-0 justify-content-between gx-0">
+                        <div class="col-10">
+                            <div>
+                                <span class="badge bg-date me-1">日期</span>
+                                <small class="color-777">2023/03/25 10:10-11:00</small>
+                            </div>
+                            <div>
+                                <span class="badge bg-tag me-1">公設</span>溫泉湯屋 <span class="color-b7c992">/</span>
+                                <span class="fs-3">2 </span>人
+                            </div>
+                        </div>
+                        <div class="col-2 leftBD px-0 d-flex justify-content-center">
+                            <div class="rec_status">
+                                <i class="fa-solid fa-check fa-2x color-c5d4a7"></i>
+                                <small class="color-c5d4a7">已使用</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="each-info">
+                    <div class="row px-0 mx-0 justify-content-between gx-0">
+                        <div class="col-10">
+                            <div>
+                                <span class="badge bg-date me-1">日期</span>
+                                <small class="color-777">2023/03/25 10:10-11:00</small>
+                            </div>
+                            <div>
+                                <span class="badge bg-tag me-1">生活</span>鐘點服務(衣物清潔) <span class="color-b7c992">/</span>
+                                <span class="fs-3">43 </span>件
+                            </div>
+                        </div>
+                        <div class="col-2 leftBD px-0 d-flex justify-content-center">
+                            <div class="rec_status">
+                                <i class="fa-solid fa-check fa-2x notyet color-306c18"></i>
+                                <small class="color-306c18">未使用</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="each-info">
+                    <div class="row px-0 mx-0 justify-content-between gx-0">
+                        <div class="col-10">
+                            <div>
+                                <span class="badge bg-date me-1">日期</span>
+                                <small class="color-777">2023/03/25 10:10-11:00</small>
+                            </div>
+                            <div>
+                                <span class="badge bg-tag me-1">課程活動</span> 課程預約(繪畫) <span class="color-b7c992">/</span>
+                                <span class="fs-3">1 </span>人
+                            </div>
+                        </div>
+                        <div class="col-2 leftBD px-0 d-flex justify-content-center">
+                            <div class="rec_status">
+                                <i class="fa-solid fa-xmark fa-2x color-306c18"></i>
+                                <small class="color-306c18">已取消</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="each-info">
+                    <div class="row px-0 mx-0 justify-content-between gx-0">
+                        <div class="col-10">
+                            <div>
+                                <span class="badge bg-date me-1">日期</span>
+                                <small class="color-777">2023/03/25 10:10-11:00</small>
+                            </div>
+                            <div>
+                                <span class="badge bg-tag me-1">生活</span>鐘點服務(衣物清潔) <span class="color-b7c992">/</span>
+                                <span class="fs-3">43 </span>件
+                            </div>
+                        </div>
+                        <div class="col-2 leftBD px-0 d-flex justify-content-center">
+                            <div class="rec_status">
+                                <i class="fa-solid fa-check fa-2x color-c5d4a7"></i>
+                                <small class="color-c5d4a7">已使用</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="each-info">
+                    <div class="row px-0 mx-0 justify-content-between gx-0">
+                        <div class="col-10">
+                            <div>
+                                <span class="badge bg-date me-1">日期</span>
+                                <small class="color-777">2023/03/25 10:10-11:00</small>
+                            </div>
+                            <div>
+                                <span class="badge bg-tag me-1">課程活動</span> 課程預約(繪畫) <span class="color-b7c992">/</span>
+                                <span class="fs-3">1 </span>人
+                            </div>
+                        </div>
+                        <div class="col-2 leftBD px-0 d-flex justify-content-center">
+                            <div class="rec_status">
+                                <i class="fa-solid fa-check fa-2x color-c5d4a7"></i>
+                                <small class="color-c5d4a7">已使用</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-func">
+                <a href="" class="ecchfunc">
+                    <div class="icon-f">
+                        <img src="./img/icon-footer-home.png" alt="首頁">
+                    </div>
+                    首頁
+                </a>
+                <a href="" class="ecchfunc">
+                    <div class="icon-f">
+                        <img src="./img/icon-footer-rec.png" alt="紀錄">
+                    </div>
+                    紀錄
+                </a>
+                <a href="" class="ecchfunc">
+                    <div class="icon-f">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
+                            3
+                        </span>
+                        <img src="./img/icon-footer-mess.png" alt="訊息">
+                    </div>
+                    訊息
+                </a>
+                <a href="" class="ecchfunc">
+                    <div class="icon-f">
+                        <img src="./img/icon-footer-acc.png" alt="我的">
+                    </div>
+                    我的
+                </a>
+            </div>
+        </footer>
+        <script src="./js/jquery.min.js"></script>
+    </div>
+</body>
+</html>

@@ -71,7 +71,7 @@ function CalendarControl() {
         $getD=e.target.textContent;
         $getM=calendar.getMonth()+1;
         $getY=calendar.getFullYear();
-        document.getElementById("hd_isNArmy").value= $getY+'/'+$getM+'/'+ $getD
+        $("#hd_isNArmy").val($getY + '/' + $getM + '/' + $getD)
       },
       plotSelectors: function () {
         document.querySelector(

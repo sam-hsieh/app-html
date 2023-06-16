@@ -4,6 +4,11 @@
   background-color: #b7c992;
   font-size: 16px;
 }
+#app.hasListScroll {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 body,
 html {
   padding: 0;
@@ -26,23 +31,36 @@ a {
   background-image: linear-gradient(42deg, #306c18, #4e7521);
   padding-top: 1rem;
   padding-bottom: 1rem;
+  position: relative;
 }
+.Subject a.goback {
+  position: absolute;
+  left: 0.5rem;
+  top: calc(50% - 1rem);
+  display: block;
+}
+.Subject a.goback > i {
+  font-size: 2rem;
+  color: #fff;
+  line-height: 1;
+}
+
 .Subject.default {
-  height: 7.4rem;
+  height: 6.4rem;
   padding-bottom: 0;
   padding-top: 1rem;
 }
 .Subject .subject-icon img {
-  width: 5rem;
+  width: 4rem;
   height: auto;
   display: block;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 .Subject h2 {
   margin: 0;
   padding: 0;
   color: #fff;
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: 500;
   font-family: "Noto Sans TC";
 }
@@ -60,9 +78,6 @@ a {
   align-items: center;
   justify-content: center;
 }
-/* .cmfac_owl{
-    z-index: 99;
-  } */
 .cmfac-pic {
   border-radius: 50%;
   border: 5px solid #fff;
@@ -111,7 +126,7 @@ a {
   font-size: 20px;
   color: #306c18;
 }
-.booking-form .count .setCount img{
+.booking-form .count .setCount img {
   width: 1.5rem;
 }
 .booking-form .count .plus:after {
@@ -143,9 +158,9 @@ a {
   font-weight: 900;
   padding: 0.5rem;
 }
-.booking-form .booking-time .item.active{
+.booking-form .booking-time .item.active {
   color: #fff;
-  background-color: #306c18;;
+  background-color: #306c18;
 }
 .booking-time.owl-carousel .owl-nav button.owl-next {
   right: -4%;
@@ -157,18 +172,170 @@ a {
 .booking-time.owl-carousel .owl-nav button.owl-prev {
   position: absolute;
   top: 25%;
-  width: 10px
+  width: 10px;
 }
 .booking-time.owl-carousel .owl-nav button.owl-next img,
 .booking-time.owl-carousel .owl-nav button.owl-prev img {
   max-width: 100%;
   height: auto;
 }
-.booking-form .btns{
+.booking-form .btns {
   padding-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.nav-tab ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.nav-tab ul li {
+  display: block;
+  height: 3.4rem;
+  width: calc(100% / 3);
+  background-color: #f1f4e9;
+  font-size: 1.4rem;
+}
+.nav-tab ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #306c18;
+  font-weight: 700;
+  border-bottom: 5px solid transparent;
+  transition: all 0.3s;
+}
+.nav-tab ul li a.active {
+  border-bottom: 5px solid #306c18;
+}
+
+.set-filter {
+  display: flex;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+  justify-content: center;
+}
+.set-filter .each-filter {
+  padding: 0.5rem;
+}
+.set-filter label {
+  display: block;
+  border-radius: 15px;
+  background-color: #fff;
+  text-align: center;
+  color: #95a573;
+  border: 2px solid #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0.2rem 0.5rem;
+}
+.set-filter input[type="checkbox"] {
+  display: none;
+}
+.each-filter input[type="checkbox"]:checked + label {
+  border: 2px solid #306c18;
+  color: #306c18;
+}
+.dis-pickup-data {
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: #fff;
+  display: flex;
+  width: 90%;
+  margin: 0.5rem auto 1rem auto;
+  color: #777;
+  font-size: 1.2rem;
+}
+.dis-pickup-data > .date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  padding: 0.5rem;
+}
+.dis-pickup-data > .go-submit {
+  width: 30%;
+  background-color: #306c18;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dis-pickup-data > .go-submit button {
+  border: none;
+  color: #fff;
+  box-shadow: none;
+  background-color: transparent;
+  display: flex;
+  height: 1.2rem;
+  line-height: 1;
+}
+.dis-pickup-data .datepicker {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  width: auto;
+}
+.dis-pickup-data .datepicker:focus {
+  outline: none;
+}
+.dis-pickup-data > .go-submit button img {
+  display: block;
+  margin-left: 0.5rem;
+  max-height: 100%;
+  width: auto;
+}
+#list-booking {
+  flex: 1;
+  flex-shrink: 0;
+  height: 0;
+  display: flex;
+}
+.list-info {
+  flex: 1;
+  overflow: auto;
+  padding-bottom: 5.6rem;
+}
+.list-info .each-info {
+  background-color: #fff;
+  margin-bottom: 0.2rem;
+  padding: 0.5rem;
+}
+.list-info .each-info .rec_status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-info .each-info .leftBD {
+  box-shadow: -1px 0px 0px 0px #d2d2d2;
+}
+.list-info .each-info .cost {
+  font-weight: 700;
+  color: #df0a36;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  font-size: 2rem;
+}
+.bill-amount {
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.bill-amount h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #df0a36;
+  padding-right: 0.5rem;
+  font-style: italic;
 }
 footer {
   background-color: #306c18;
@@ -183,6 +350,7 @@ footer .footer-func {
   display: flex;
   justify-content: space-around;
   background-color: #306c18;
+  height: 4.1rem;
 }
 footer .footer-func > a.ecchfunc {
   display: flex;
@@ -217,19 +385,7 @@ footer .footer-func > a.ecchfunc > .icon-f > .badge {
     width: 700px;
     left: calc(50% - 700px / 2);
   }
-  /* #hint {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: fixed;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      min-height: 100vh;
-      width: 100%;
-      background-color: #b7c992;
-    } */
+
   #hint:after {
     content: "裝置解析度不符";
     font-size: 5vw;
