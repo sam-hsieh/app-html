@@ -218,6 +218,22 @@ a {
   margin: 0.5rem 0 0 0;
   justify-content: center;
 }
+.set-filter.select {
+  width: 90%;
+  margin: 1rem auto 0.5rem auto;
+  justify-content: flex-start;
+}
+.set-filter.select select {
+  width: auto;
+  border-radius: 15px;
+  border: 2px solid #306c18;
+  color: #306c18;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.set-filter.select select:focus {
+  box-shadow: none;
+}
 .set-filter .each-filter {
   padding: 0.5rem;
 }
@@ -336,6 +352,12 @@ a {
   color: #df0a36;
   padding-right: 0.5rem;
   font-style: italic;
+}
+.mess-content{
+  padding: 1rem;
+  background-color: #fff;
+  width: 90%;
+  margin: 1rem auto;
 }
 footer {
   background-color: #306c18;

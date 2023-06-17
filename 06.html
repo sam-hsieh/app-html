@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>訊息通知</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/solid.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon" xmlns="">
+    <link rel="apple-touch-icon" href="/favicon.png">
+</head>
+
+<body>
+    <div id="app" class="hasListScroll">
+        <div class="Subject">
+            <a href="javascript:;" class="goback">
+                <i class="fa-solid fa-angle-left"></i>
+            </a>
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="subject-icon">
+                    <img src="./img/icon-h-03.png" alt="">
+                </div>
+                <h2>
+                    訊息通知
+                </h2>
+            </div>
+        </div>
+        <div class="set-filter select">
+            <select name="" id="" class="form-select">
+                <option value="">請選擇訊息類別</option>
+                <option value="">類別1</option>
+                <option value="">類別2</option>
+                <option value="">類別3</option>
+            </select>
+        </div>
+        <div class="dis-pickup-data">
+            <div class="date">
+                <div class="d-flex align-items-center">
+                    <span>起始日 </span>
+                    <input type="date" class="datepicker fw-700" id="date-start" value="2023-07-19">
+                </div>
+                <div class="d-flex align-items-center">
+                    <span>結束日 </span>
+                    <input type="date" class="datepicker fw-700" id="date-end" value="2023-07-23">
+                </div>
+            </div>
+            <div class="go-submit">
+                <button>查詢 <i class="fa-solid fa-magnifying-glass ms-2"></i></button>
+            </div>
+        </div>
+        <div id="list-booking" class="dislist">
+            <div class="list-info content-scroll">
+                <div class="each-info">
+                    <div class="row px-0 mx-0 justify-content-between gx-0">
+                        <div class="col-12">
+                            <i class="fa-solid fa-message color-b7c992 me-2"></i>今天(3/25)於溫泉湯屋消費40元
+                        </div>
+                        <div class="col">
+                            <small class="color-777">2023/03/25 10:10-11:00</small>
+                        </div>
+                        <div class="col-auto">
+                            <a class="btn btn-primary btn-ctm sm" style="--btn-ctm-bg-color:#306c18" href="./07.html">
+                                <i class="fa-solid fa-circle-info"></i>
+                                詳細
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="each-info">
+                    <div class="row px-0 mx-0 justify-content-between gx-0">
+                        <div class="col-12">
+                            <i class="fa-sharp fa-solid fa-box color-b7c992 me-2"></i>你有一件包裹送達
+                        </div>
+                        <div class="col">
+                            <small class="color-777">2023/03/25 10:10-11:00</small>
+                        </div>
+                        <div class="col-auto">
+                            <a class="btn btn-primary btn-ctm sm" style="--btn-ctm-bg-color:#306c18" href="./07.html">
+                                <i class="fa-solid fa-circle-info"></i>
+                                詳細
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="each-info">
+                    <div class="row px-0 mx-0 justify-content-between gx-0">
+                        <div class="col-12">
+                            <i class="fa-solid fa-message color-b7c992 me-2"></i>今天(3/25)於溫泉湯屋消費40元
+                        </div>
+                        <div class="col">
+                            <small class="color-777">2023/03/25 10:10-11:00</small>
+                        </div>
+                        <div class="col-auto">
+                            <a class="btn btn-primary btn-ctm sm" style="--btn-ctm-bg-color:#306c18" href="./07.html">
+                                <i class="fa-solid fa-circle-info"></i>
+                                詳細
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="each-info">
+                    <div class="row px-0 mx-0 justify-content-between gx-0">
+                        <div class="col-12">
+                            <i class="fa-sharp fa-solid fa-box color-b7c992 me-2"></i>你有一件包裹送達
+                        </div>
+                        <div class="col">
+                            <small class="color-777">2023/03/25 10:10-11:00</small>
+                        </div>
+                        <div class="col-auto">
+                            <a class="btn btn-primary btn-ctm sm" style="--btn-ctm-bg-color:#306c18" href="./07.html">
+                                <i class="fa-solid fa-circle-info"></i>
+                                詳細
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="each-info">
+                    <div class="row px-0 mx-0 justify-content-between gx-0">
+                        <div class="col-12">
+                            <i class="fa-solid fa-message color-b7c992 me-2"></i>今天(3/25)於溫泉湯屋消費40元
+                        </div>
+                        <div class="col">
+                            <small class="color-777">2023/03/25 10:10-11:00</small>
+                        </div>
+                        <div class="col-auto">
+                            <a class="btn btn-primary btn-ctm sm" style="--btn-ctm-bg-color:#306c18" href="./07.html">
+                                <i class="fa-solid fa-circle-info"></i>
+                                詳細
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="each-info">
+                    <div class="row px-0 mx-0 justify-content-between gx-0">
+                        <div class="col-12">
+                            <i class="fa-sharp fa-solid fa-box color-b7c992 me-2"></i>你有一件包裹送達
+                        </div>
+                        <div class="col">
+                            <small class="color-777">2023/03/25 10:10-11:00</small>
+                        </div>
+                        <div class="col-auto">
+                            <a class="btn btn-primary btn-ctm sm" style="--btn-ctm-bg-color:#306c18" href="./07.html">
+                                <i class="fa-solid fa-circle-info"></i>
+                                詳細
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="each-info">
+                    <div class="row px-0 mx-0 justify-content-between gx-0">
+                        <div class="col-12">
+                            <i class="fa-solid fa-message color-b7c992 me-2"></i>今天(3/25)於溫泉湯屋消費40元
+                        </div>
+                        <div class="col">
+                            <small class="color-777">2023/03/25 10:10-11:00</small>
+                        </div>
+                        <div class="col-auto">
+                            <a class="btn btn-primary btn-ctm sm" style="--btn-ctm-bg-color:#306c18" href="./07.html">
+                                <i class="fa-solid fa-circle-info"></i>
+                                詳細
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="each-info">
+                    <div class="row px-0 mx-0 justify-content-between gx-0">
+                        <div class="col-12">
+                            <i class="fa-sharp fa-solid fa-box color-b7c992 me-2"></i>你有一件包裹送達
+                        </div>
+                        <div class="col">
+                            <small class="color-777">2023/03/25 10:10-11:00</small>
+                        </div>
+                        <div class="col-auto">
+                            <a class="btn btn-primary btn-ctm sm" style="--btn-ctm-bg-color:#306c18" href="./07.html">
+                                <i class="fa-solid fa-circle-info"></i>
+                                詳細
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-func">
+                <a href="" class="ecchfunc">
+                    <div class="icon-f">
+                        <img src="./img/icon-footer-home.png" alt="首頁">
+                    </div>
+                    首頁
+                </a>
+                <a href="" class="ecchfunc">
+                    <div class="icon-f">
+                        <img src="./img/icon-footer-rec.png" alt="紀錄">
+                    </div>
+                    紀錄
+                </a>
+                <a href="" class="ecchfunc">
+                    <div class="icon-f">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
+                            3
+                        </span>
+                        <img src="./img/icon-footer-mess.png" alt="訊息">
+                    </div>
+                    訊息
+
+                </a>
+                <a href="" class="ecchfunc">
+                    <div class="icon-f">
+                        <img src="./img/icon-footer-acc.png" alt="我的">
+                    </div>
+                    我的
+                </a>
+            </div>
+        </footer>
+        <script src="./js/jquery.min.js"></script>
+    </div>
+</body>
+
+</html>
