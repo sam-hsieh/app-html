@@ -28,7 +28,7 @@ a {
 }
 
 .Subject {
-  background-image: linear-gradient(42deg, #306c18, #4e7521);
+  background-image: linear-gradient(42deg, #306c18, #306c18);
   padding-top: 1rem;
   padding-bottom: 1rem;
   position: relative;
@@ -77,6 +77,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .cmfac-pic {
   border-radius: 50%;
